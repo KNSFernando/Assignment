@@ -44,6 +44,70 @@
         .cta-buttons {
             margin-top: 2rem;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        #contact-section {
+            padding-top: 80px;
+            margin-top: -80px;
+        }
+        
+        .projects-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-divider {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #0d6efd, transparent);
+            margin: 1.5rem 0;
+        }
+        
+        .project-role {
+            font-weight: 600;
+            color: #0d6efd;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-description {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 1rem;
+        }
+        
+        .tech-tag {
+            background-color: #f8f9fa;
+            color: #495057;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid #e9ecef;
+        }
     </style>
 </head>
 
@@ -66,7 +130,7 @@
 
             <div class="collapse navbar-collapse justify-content-end " id="Drop">
               <ul class="navbar-nav d-flex">
-                <li class="nav-item "><button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#ContentAboutExperience">Experience</button></li>
+                
                 <li class="nav-item "><button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#ContentAboutEducation">Education</button></li>
                 <li class="nav-item "><button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#ContentAboutSkills">Skills</button></li>
                 <li class="nav-item "><button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#ContentAboutProjects">Projects</button></li>
@@ -89,15 +153,19 @@
                 <div class="col-12 col-md-8 intro-text">
                     <h1 class="display-5 fw-bold">Hello, I'm <span class="text-primary">Kadupittge Nethra Sandadiya Fernando</span></h1>
                     <p class="tagline">Computer Science Student | Web Developer | Embedded Systems Enthusiast</p>
-                    <p class="lead">I'm a passionate Computer Science student at the University of Dundee with a strong interest in software development, problem-solving, and creating efficient solutions. Seeking a summer internship to further develop my technical skills and contribute to innovative software solutions.</p>
+                    <p class="lead">I'm a passionate Computer Science student at the University of Dundee with a strong interest in software development, problem-solving, and creating efficient solutions. I strive to create a inclusive learning environments for students. Seeking a summer internship to further develop my technical skills and contribute to innovative software solutions.</p>
                     
                     
                     
                     <div class="cta-buttons">
                         <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#ContentAboutProjects">View My Projects</button>
-                        <a href="My CV.docx"> 
+                        <a href="Fernando.docx"> 
                         <button class="btn btn-outline-primary">Download CV</button>
+                        </a>
 
+                        <p> </p>
+                        <a href="Job.docx"> 
+                        <button class="btn btn-outline-primary">Download Job Description</button>
                         </a>
                     </div>
                 </div>
@@ -113,74 +181,6 @@
         <h3><i class="fa fa-cloud"></i> More About Myself </h3>
         
         <div class="accordion mb-4" id="MoreAboutMyself">
-          
-          <div class="accordion-item">
-
-            <h2 class="accordion-header text-center"  id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ContentAboutExperience">
-                Experience
-              </button>
-            </h2>
-            
-            <div id="ContentAboutExperience" class="accordion-collapse collapse" data-bs-parent="#MoreAboutMyself">
-
-              <div class="accordion-body">
-                <h2 class="text-center">Worked as a part time porter at Giardini di Tecla at Via Provinciale per Riposto, 68, 95024 Santa Tecla CT, Italy from 01/03/2024 to 30/08/2024.</h2>
-
-                <div id="Work" class="carousel slide mb-4" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#Work" data-bs-slide-to="0" class="active"></button>
-                      <button type="button" data-bs-target="#Work" data-bs-slide-to="1"></button>
-                      <button type="button" data-bs-target="#Work" data-bs-slide-to="2"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="NiceTables.jpg" class="d-block w-100" alt="Picture 1 (It was taken from google)" width="800" height="300">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="BackYard.jpeg" class="d-block w-100" alt="Picture 2 (It was taken from google)" width="800" height="300">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="PalmTrees.jpeg" class="d-block w-100" alt="Picture 3 (It was taken from google)" width="800" height="300">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#Work" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#Work" data-bs-slide="next">
-                      <span class="carousel-control-next-icon"></span>
-                    </button>
-                  </div>
-                <br>
-                <h3>Main Services:</h3>
-                <ul>
-                    <li>Collected used table ware and delivered them to the dishwasher</li>
-                </ul>
-
-                <br>
-                <h3>Guest Services:</h3>
-                <ul>
-                    <li>Collected used table ware and delivered them to the dishwasher</li>
-                </ul>
-
-                <br>
-                <h3>Communication & Cordination:</h3>
-                <ul>
-                    <li>Reported maintenance issues and guest concerns, contributing to a proactive approach in guest care.</li>
-                </ul>
-
-                <br>
-                <h3>Safety & Security:</h3>
-                <ul>
-                    <li>Followed hotel policies for lost and found items, maintaining accurate records and proper handling procedures
-                    </li>
-                </ul>
-      
-              </div>
-
-            </div>
-
-          </div>
 
             <div class="accordion-item">
 
@@ -194,7 +194,7 @@
     
                   <div class="accordion-body">
                     <h2 class="text-center">University of Dundee | Bachelor of Science </h2>
-                    <p class="text-center">I am studying Computer Science.</p>
+                    <p class="text-center">2024 - 2028</p>
 
                     <div id="Studies" class="carousel slide mb-4" data-bs-ride="carousel">
                       <div class="carousel-indicators">
@@ -251,14 +251,27 @@
                   <div id="ContentAboutSkills" class="accordion-collapse collapse" data-bs-parent="#MoreAboutMyself">
       
                     <div class="accordion-body">
-                      
+                      <p>Technical Skills</p>
                       <div class="specialties">
-                        <span class="specialty-badge">Front-End Development</span>
+                        <span class="specialty-badge">Web Technologies: HTML, CSS</span>
                         <span class="specialty-badge">Programming Languages: Java, C, C++, Python</span>
                         <span class="specialty-badge">Networking Tools: Cisco Packet Tracer</span>
-                        <span class="specialty-badge">Version Control</span>
+                        <span class="specialty-badge">Version Control: Git, GitHub</span>
+                        <span class="specialty-badge">Networking Tools: Cisco Packet Tracer</span>
+                      </div>
+
+                      <br>
+
+                      <p>Soft Skills</p>
+                      <div class="specialties">
+                        <span class="specialty-badge">Team Work</span>
+                        <span class="specialty-badge">Time Mangaement </span>
+                        <span class="specialty-badge">Teaching</span>
+                        <span class="specialty-badge">Classroom experience</span>
+                        <span class="specialty-badge">Communication</span>
+                        <span class="specialty-badge">Project Mangent</span>
                         <span class="specialty-badge">Trilingual (Italian, English & Sinhalese)</span>
-                    </div>
+                      </div>
                     
                     </div>
       
@@ -271,62 +284,96 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ContentAboutProjects">
                           Projects
                         </button>
-                      </h2>
+                    </h2>
                       
                       <div id="ContentAboutProjects" class="accordion-collapse collapse" data-bs-parent="#MoreAboutMyself">
           
-                        <div class="accordion-body align-items-center justify-content-center text-center">
-                            
-                                <div class="row">
-
-                                    <div class="col-12 col-md-4 ">
-
-                                        <div class="card mb-4">
-                                          <img src="TheBoys.jpg" class="hover-shadow mx-auto" width="300" height="300" alt="The bros" >
-    
-                                          <div class="card-body">
-                                                <h5 class="card-title">Group Projects</h5>
-                                                <p class="card-text"> Group work I have participated in.</p>
-                                                <a href="https://jedidiah-1234.github.io/HackathonApp/AudioGuide.html" class="btn btn-primary" role="button">Check out</a>
-                                            </div>
-    
+                        <div class="container my-5" id="projects-section">
+                          <div class="projects-header">
+                              <h2 class="display-6 fw-bold">Recent Work</h2>
+                              <p class="text-muted">A selection of my recent projects and contributions</p>
+                          </div>
+        
+                          <div class="row justify-content-center">
+                              <div class="col-12 col-lg-10">
+                                  <!-- Project 1 -->
+                                  <div class="project-card">
+                                      <h3 class="project-title">Travel Tunes</h3>
+                                      <hr class="project-divider">
+                                      <div class="text-center">
+                                          <img src="Travel Tunes Logo.png" alt="The logo of Travel Tunes" width="200" height="200">
                                         </div>
-
-                                    </div>
-    
-                                    <div class="col-12 col-md-4 ">
-    
-                                            <div class="card mb-4" >
-                                                <img src="No.jpg" class="hover-shadow mx-auto" width="300" height="300" alt="Just me"  >
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Solo Projects</h5>
-                                                    <p class="card-text"> Individual work I have done.</p>
-                                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Error">Check out</button>
-                                                </div>
-                                            </div>
-
-                                    </div>
-
-                                    <div class="col-12 col-md-4 ">
-    
-                                      <div class="card mb-4" >
-                                          <img src="LookingForward.jpg" class="hover-shadow mx-auto" width="300" height="300" alt="I don't know what I am looking at"  >
-                                          <div class="card-body">
-                                              <h5 class="card-title">Future Projects</h5>
-                                              <p class="card-text">Insights into some future work.</p>
-                                              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Error">Check out</button>
-                                          </div>
+                                      <p class="project-role">Role: Web Developer</p>
+                                      <p class="project-description">
+                                          At Travel Tunes, our mission is to help international students in Dundee feel at home by providing an immersive cultural, social, and academic guide. Through curated audio experiences, insider tips, and local insights, we aim to make your journey smoother, your experiences richer, and your connections stronger. Whether you're discovering the city's hidden gems, navigating university life, or finding your favorite café, we're here to make Dundee feel like home — one tune at a time.
+                                      </p>
+                                      <br>
+                                      <p><strong>Key Challenge:</strong> This marked my introduction to web application development. Working within tight university competition deadlines, I focused on UI design while collaborating closely with my teammate Jed to bring this project to life.
+                                      </p>
+                                      <div class="project-tech">
+                                          <span class="tech-tag">HTML</span>
+                                          <span class="tech-tag">CSS</span>
+                                          <span class="tech-tag">Javascript</span>
+                                          
+                                       </div>
+                                       <br>
+                                       <a href="https://jedidiah-1234.github.io/HackathonApp/AudioGuide.html" class="btn btn-primary" role="button">Check out</a>
+                                       <a href="https://github.com/Jedidiah-1234/HackathonApp" class="btn btn-primary" role="button">Repository</a>
+                                  </div>
+                
+                                  <!-- Project 2 -->
+                                  <div class="project-card">
+                                      <h3 class="project-title">Tom and Jerry webpage</h3>
+                                      <hr class="project-divider">
+                                      <div class="text-center">
+                                          <img src="Tom and Jerry Logo.png" alt="The logo of Tom adn Jerry from Wikipedia" width="400" height="100">
+                                        </div>
+                                      <p class="project-role">Role: Web Developer</p>
+                                      <p class="project-description">
+                                      Collaborated in a 3-person team to design and develop a fan page for the classic cartoon Tom and Jerry, sourcing content from Wikipedia. This project served as my introduction to GitHub and version control workflows.
+                                    </p>
+                                      <br>
+                                      <p><strong>Key Challenge:</strong> Mastering GitHub fundamentals including branching, pull requests, issue tracking, and collaborative coding practices. The repository represents our fourth iteration, reflecting our growing proficiency with version control systems.
+                                    </p>
+                                      <div class="project-tech">
+                                          <span class="tech-tag">HTML</span>
+                                          <span class="tech-tag">CSS</span>
+                                          <span class="tech-tag">Javascript</span>
+                                          <span class="tech-tag">Github</span>
                                       </div>
-
-                              </div>
+                                      <br>
+                                      <a href="https://2634963.github.io/tom-and-jerry-website/pages/Overview.html" class="btn btn-primary" role="button">Check out</a>
+                                       <a href="https://github.com/2634963/tom-and-jerry-website" class="btn btn-primary" role="button">Repository</a>
+                                  </div>
+                
+                                  <!-- Project 3 -->
+                                  <div class="project-card">
+                                      <h3 class="project-title">Scribble</h3>
+                                      <hr class="project-divider">
+                                      <p class="project-role">Role: Software Engineer</p>
+                                      <p class="project-description">
+                                       The project is about a game of Scribble. It is quite like the game of Scrabble. The purpose of the game of Scribble is for players to take turns making words from a collection of alphabetical letters that are available to them. On their turn, a player can place a sequence of letters onto the spaces of a game board to form a single word. Each letter of the alphabet has points associated with it that will get added to the player’s score. Once a player has placed their word onto the board, the points for each letter they have used are calculated and then added to the player’s total score. The winner of the game will be the player who has the most points at the end. I really doubt it will happen since I have set a limit of 200 turns for the game to end. Therefore, it is highly likely that the game will ned when a player gets 100 points.   
+                                      </p>
+                                      <br>
+                                      <p>
+                                        <strong>Key Challenge:</strong> I faced quite a few challenges during the coding process. Major one being my own laziness, but another that stands out the most is the shear size of the code I was writing. At one point, it was over 5000 lines of code! It was quite daunting to just go through my code. This happened because I wrote every player’s turn down in my method. Since it was the player's turn that caused the mountain of code, I solved it by making the player’s turn a method of its own.
+                                      </p>
+                                      <div class="project-tech">
+                                          <span class="tech-tag">Java</span>
+                                      </div>
+                                      <br>
+                                      <a href="Kadupitige_Nethra.zip"> 
+                                        <button class="btn btn-outline-primary">Download Zip File</button>
+                                        </a>
+                                  </div>
+                
+                                  
 
                                 </div>
-
-                          <p class="text-center">What kind of Projects whould you like to view?</p>
-                
+                            </div>
                         </div>
           
-                      </div>
+                  </div>
     
                 </div>
 
@@ -344,12 +391,24 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title">
-                    Sorry
+                    Contact Info
                   </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  We are still working on it...
+                  
+                  <p class="text-center"><i class="fa fa-phone"></i> Telephone: +94710793424 
+                    <br>
+                  <a class="color-white" href="mailto:spatiumaeternum@outlook.com">Email: spatiumaeternum@outlook.com</a>
+                  </p>
+                  <br>
+                  <a href="https://github.com/KNSFernando" target="_blank"> 
+                        <button class="btn btn-outline-primary">GitHub <i class="fa fa-github fa-lg"></i></button>
+                        </a>
+                  <p>  </p>
+                  <a href="https://www.linkedin.com/in/k-n-s-fernando-397a35328/" target="_blank"> 
+                        <button class="btn btn-outline-primary">LinkedIn <i class="fa fa-linkedin-square fa-lg"></i></button>
+                        </a>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -364,7 +423,15 @@
     <i class="fa fa-address-card-o"></i> Contact 
     <p class="text-center"><i class="fa fa-phone"></i> Telephone: +94710793424 
         <br>
-        <i class=" fa fa-facebook-official"></i>  <i class=" fa fa-instagram"></i> <i class="	fa fa-linkedin-square"></i>  <i class="	fa fa-pinterest-square"></i> <i class="	fa fa-snapchat-square"></i> <i class="	fa fa-skype"></i> <i class="		fa fa-twitter-square"></i> 
+        <a href="https://github.com/KNSFernando" target="_blank">
+          <i class="fa fa-github fa-lg"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/k-n-s-fernando-397a35328/" traget="_blank">
+          <i class="fa fa-linkedin-square fa-lg"></i>
+        </a>
+
+        
         <br>
         <a class="color-white" href="mailto:spatiumaeternum@outlook.com">Email: spatiumaeternum@outlook.com</a>
     </p>
