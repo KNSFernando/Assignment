@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <!--The header-->
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K.N.S.Fernando</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  </head>
+    <style>
+        .intro-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 3rem 0;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 2rem;
+        }
+        .profile-img {
+            border-radius: 50%;
+            max-width: 250px;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .intro-text {
+            padding: 2rem;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+        }
+        .specialties {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 1.5rem;
+        }
+        .specialty-badge {
+            background-color: #0d6efd;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .cta-buttons {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
 
   <!--The body-->
 
@@ -43,32 +80,29 @@
     </div>
 
 <!--My Intro. It contains my picture and acts as the main page.-->
-    <div class="container p-1 mb-2">
-        <div class="row bg-#d3d3d3 text-center">
-            <div class="col-12 col-md-8">
-                    
-                    <img src="Nope.jpg" class="img-fluid hover-shadow" alt="My Image">
-
-            </div>
-
-            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center text-center">
-                
-                <div class="row bg-#d3d3d3 d-flex align-items-center">
-                    <h2 class="text-center">Hello!</h2>
-                    <br>
-                    <h2 class="text-center">I am Kadupitige Nethra Sandadiya Fernando</h2>
+    <div class="intro-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                    <img src="WhatsApp Image 2025-10-21 at 15.49.48.jpeg" class="profile-img img-fluid" alt="Kadupittge Nethra Sandadiya Fernando">
                 </div>
+                <div class="col-12 col-md-8 intro-text">
+                    <h1 class="display-5 fw-bold">Hello, I'm <span class="text-primary">Kadupittge Nethra Sandadiya Fernando</span></h1>
+                    <p class="tagline">Computer Science Student | Web Developer | Embedded Systems Enthusiast</p>
+                    <p class="lead">I'm a passionate Computer Science student at the University of Dundee with a strong interest in software development, problem-solving, and creating efficient solutions. Seeking a summer internship to further develop my technical skills and contribute to innovative software solutions.</p>
+                    
+                    
+                    
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#ContentAboutProjects">View My Projects</button>
+                        <a href="My CV.docx"> 
+                        <button class="btn btn-outline-primary">Download CV</button>
 
+                        </a>
+                    </div>
+                </div>
             </div>
-                
-            
         </div>
-    </div>
-
-    <div class="row bg-#d3d3d3 d-flex align-items-center">
-        <p class="text-center">I'm a Computer Science student passionate about web development and embedded systems.
-          <br>
-          Welcome to my porfolio.</p>
     </div>
 
     <!--The according section. It makes everyhing less overwhelming at first glance. -->
@@ -217,8 +251,15 @@
                   <div id="ContentAboutSkills" class="accordion-collapse collapse" data-bs-parent="#MoreAboutMyself">
       
                     <div class="accordion-body">
-                      <p class="text-center">Active listening | Willingness to learn | Open-mindedness | Adaptability | Conflict resolution| Problem solving| Trilingual (Italian, English & Sinhalese)</p>
-            
+                      
+                      <div class="specialties">
+                        <span class="specialty-badge">Front-End Development</span>
+                        <span class="specialty-badge">Programming Languages: Java, C, C++, Python</span>
+                        <span class="specialty-badge">Networking Tools: Cisco Packet Tracer</span>
+                        <span class="specialty-badge">Version Control</span>
+                        <span class="specialty-badge">Trilingual (Italian, English & Sinhalese)</span>
+                    </div>
+                    
                     </div>
       
                   </div>
